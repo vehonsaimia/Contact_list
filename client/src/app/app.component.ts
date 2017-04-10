@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+/*add on this page: variables and functions*/
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'app works!'
+  contact;
+
+  constructor(){
+    this.contact={firstName: 'Kalle', lastName: 'Ankka', phone: '123 4578', streetAddress: 'Kenopolku 102', city: 'Peräkylä'}
+  }
+
+
 }

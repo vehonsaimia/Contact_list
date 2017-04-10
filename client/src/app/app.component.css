@@ -1,0 +1,5 @@
+table, th, td {border: 1px royalblue; border-collapse: collapse; padding: 5px;
+ }
+table tr:nth-child(even) {background-color: lavender;}
+
+

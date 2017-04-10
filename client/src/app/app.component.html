@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
-</h1>
+<p> Add a new contact</p>
+<table>
+      <tr><input type ="text" ng-model = contact.firstName placeholder="first name"> </tr>
+      <tr><input type ="text" ng-model = contact.lastName placeholder="last name"></tr>
+      <tr><input type ="text" ng-model = contact.phone placeholder="phone"></tr>
+      <tr><input type ="text" ng-model = contact.streetAddress placeholder="street address"></tr>
+      <tr><input type ="text" ng-model = contact.city placeholder="city"></tr>
+  </table>
+<button onclick="saveContact" style="background-color: chartreuse">SAVE</button>
+<br>
+
+<p style="color: crimson">
+Contact list
+</p>
+<table width=100%; style="border: solid" >
+  <tr>
+    <td> {{contact.lastName}} </td>
+    <td> {{contact.firstName}} </td>
+    <td> {{contact.phone}} </td>
+    <td> {{contact.streetAddress}}{{contact.city}}</td>
+  </tr>
+</table>
